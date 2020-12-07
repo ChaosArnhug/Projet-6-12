@@ -1,0 +1,64 @@
+/*Meunier Arnaud*/
+body{
+    font-family: Verdana Arial fantasy;
+    font-size: 1em;
+    margin: 0;
+    background-color : #333333;
+}
+/*Navigation*/
+#navigation {
+    display: block;
+    color: #DDDDDD;
+    margin: 0;
+    width: 18.75em;
+    height: 100%;
+    float: left;
+}
+#navigation ul {
+    list-style-type: none;
+    margin:0;
+    padding: 0;
+}
+#navigation li{
+    padding-top: 1.585em;
+    padding-bottom: 1.585em;
+
+    border-bottom: #DDDDDD solid 1px;
+    text-align: center;
+}
+#navigation a{
+    text-decoration: none;
+    color: #DDDDDD;
+    font-size: 1.25em;
+}
+#navigation a:hover{
+    color: #A0A0A0;
+
+}
+
+/*Contenu*/
+/*Titre*/
+#titre img {
+    background-color: #6BC33F;
+    border: none;
+    float: left;
+    width: 4.2em;
+    height: 4.2em;
+}
+#titre h1 {
+    margin: 0;
+    height:1.54em ;
+    padding-top:0.55em;
+    padding-left: 3em;
+    background-color: #333333;
+    color: #FFFFFF;
+}
+
+/**/
+#corpsPage{
+    float: left;
+    background-color: white;
+    width: calc(100% - 18.75em);
+    height: 100%;
+
+}

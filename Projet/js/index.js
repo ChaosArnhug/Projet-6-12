@@ -3,8 +3,8 @@
 
 //variables
 let profils = [];
-
-//fonctions
+let menuNav =0;
+//fonctions de traitement
 function getElem (id) {
     return document.getElementById(id)
 }
@@ -28,3 +28,23 @@ function envoitFromulaire(formulaire){
     profils.unshift(newProfil);
     return false;
 }
+
+//fonction de mise en page
+
+function rotationImage (){
+    getElem("imgNav").style.transform +='rotate(180deg)';
+}
+function modifNav () {
+    if (menuNav ===0){
+        getElem("navigation").style.display= "none";
+        getElem("corpsPage").style.width= "100%";
+        menuNav = 1;
+        return;
+    }
+    getElem("navigation").style.display= "block";
+    getElem("corpsPage").style.width= "calc(100% - 18.75em)";
+    menuNav =0;
+}
+
+//Dynamique
+document.addEventListener('DOMContentLoaded', rotationImage);

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!-- Meunier Arnaud
+lien github : https://github.com/ChaosArnhug/Projet-6-12
+-->
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Ajout profil</title>
+    <script src="js/index.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <div id="navigation">
+        <nav>
+            <ul>
+                <li><a href="index.html">Acceuil</a></li>
+                <li><a href="NewProfil.html">Nouveau profil</a></li>
+                <li><a href="RechProfil.html">Recherche profil</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="corpsPage">
+        <div id="titre">
+            <img src="img/nav_fleche.png" alt="flèche vers la droite" id="imgNav" onclick="rotationImage('imgNav');modifNav()">
+            <h1>Profil En Ligne</h1>
+        </div>
+        <div>
+            <form onsubmit="return envoitFromulaire(this)">
+                <fieldset>
+                    <legend>Informations personnelles</legend>
+                    <label for="nom">Nom* : </label>
+                    <input type="text" id="nom" name="nom" placeholder="Indiquer votre nom" required><br>
+                    <label for="prenom">Prénom* : </label>
+                    <input type="text" id="prenom" name="prenom" placeholder="Indiquer votre prénom" required><br>
+                    <div>
+                        <p>Sélectionner votre genre* : </p>
+                        <input type="radio" id="GMasculin" name="genre" value="homme" required>
+                        <label for="GMasculin">Homme</label>
+                        <input type="radio" id="GFeminin" name="genre" value="femme" required>
+                        <label for="GFeminin">Femme</label>
+                        <input type="radio" id="GAutre" name="genre" value="autre" required>
+                        <label for="GAutre">Autre</label>
+                    </div><br>
+                    <label for="age">Age* : </label>
+                    <input type="number" id="age" name="age" placeholder="Indiquer votre age" min="0" required><br>
+                    <label for="numTel">Numéro de téléphone* : </label>
+                    <input type="tel" id="numTel" name="numTel" placeholder="Indiquer votre numéro" required><br>
+                    <label for="email">Email* : </label>
+                    <input type="email" id="email" name="email" placeholder="Indiquer votre email" required><br>
+                </fieldset>
+                <fieldset>
+                    <legend>Vie professionnelle</legend>
+                    <label for="diplome">Diplome(s) : </label>
+                    <input type="text" id="diplome" name="diplome" placeholder="Indiquer vos diplomes"><br>
+                    <label for="jobs">Job(s) : </label>
+                    <input type="text" id="jobs" name="jobs" placeholder="travail actuel et précédents"><br>
+                </fieldset>
+                <fieldset>
+                    <legend>Informations supplémentaires</legend>
+                    <label for="infoSup">Commantaire supplémantaire : </label>
+                    <input type="text" id="infoSup" name="infoSup" placeholder="votre commantaire">
+                </fieldset>
+                <small>* Informations obligatoires</small>
+                <div>
+                    <button type="submit">Envoyer</button>
+                    <button type="reset">Réinitialiser</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
