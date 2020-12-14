@@ -5,7 +5,8 @@
 let profils = [
     {age: "54", comm: "mort", diplome: "RIP", email: "add2@gmail.com", genre: "homme", jobs: "", nom: "Maxime", prenom: "Liégeois", tel: "047464587"},
     {age: "20", comm: "XD", diplome: "", email: "add1@gmail.com", genre: "homme", jobs: "professeur", nom: "Liégeois", prenom: "Romain", tel: "0465856987"},
-    {age: "18", comm: "aime manga et jeux vidéo", diplome: "technologie de l'informatique",email: "arnaudmeunier03@gmail.com", genre: "homme", jobs: "caisier", nom: "meunier", prenom: "arnaud", tel: "0474683750"}
+    {age: "18", comm: "aime manga et jeux vidéo", diplome: "technologie de l'informatique",email: "arnaudmeunier03@gmail.com", genre: "homme", jobs: "caisier", nom: "meunier", prenom: "arnaud", tel: "0473583750"},
+    {age: "10", comm: "https://twitter.com/BSiberdt", diplome: "diplôme approximatif en médecine approximative",email: "benjaminsiberdtsimba@yahoo.be", genre: "autre", jobs: " influenceur et pâtissier les jeudis", nom: "siberdt", prenom: "benjamin", tel: "0469420420"},
     ];
 let filtre ={};
 let statusNav =0;
@@ -90,17 +91,17 @@ function afficherFiltre(){
 }
 function afffichageProfils (){
     let profilsTrier= profils.filter(trieur);
-    let affichageProfils="";
+    let affichProfils="";
     if ( ! profilsTrier.length){
-        affichageProfils +="<section class='profilsNon'><p>Aucun résultat trouvé !</p><br><br><br><br><br><br></section>"
+        affichProfils +="<section class='profilsNon'><p>Aucun résultat trouvé !</p><br><br><br><br><br><br></section>"
     }else{
         for (let i of profilsTrier){
-            affichageProfils += `<section class="profils"><p>Nom : ${i.nom}<br>Prénom : ${i.prenom}<br>Genre : ${i.genre}<br>Age : ${i.age}<br></p>
+            affichProfils += `<section class="profils"><p>Nom : ${i.nom}<br>Prénom : ${i.prenom}<br>Genre : ${i.genre}<br>Age : ${i.age}<br></p>
             Téléphone : ${i.tel}<br>Email : ${i.email}<br>Diplôme(s) : ${i.diplome}<br>Job(s) : ${i.jobs}<br>
             Commentaire : ${i.comm}<br></section>`
         }
     }
-    getElem("affichageProfils").innerHTML = affichageProfils;
+    getElem("affichageProfils").innerHTML = affichProfils;
 }
 //Dynamique
 document.addEventListener('DOMContentLoaded', rotationImage);
