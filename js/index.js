@@ -3,10 +3,10 @@
 
 //variables
 let profils = [
-    {age: "42", comm: "joue dans l'illégalité", diplome: "arts et lettres de l'académie des arts ", email: "S.chardon@gmail.com", genre: "femme", jobs: "essentiellement du black", nom: "chardon", prenom: "sandrine", tel: "3141592653"},
-    {age: "47", comm: "wui", diplome: "ingénierie agronome", email: "add1@gmail.com", genre: "homme", jobs: "voir diplôme", nom: "pouquet", prenom: "jacques", tel: "0494461834"},
-    {age: "18", comm: "aime manga et jeux vidéo", diplome: "technologie de l'informatique",email: "arnaudmeunier03@gmail.com", genre: "homme", jobs: "caisier", nom: "meunier", prenom: "arnaud", tel: "0473583750"},
-    {age: "10", comm: "https://twitter.com/BSiberdt", diplome: "diplôme approximatif en médecine approximative",email: "benjaminsiberdtsimba@yahoo.be", genre: "autre", jobs: " influenceur et pâtissier les jeudis", nom: "siberdt", prenom: "benjamin", tel: "0469420420"},
+    {age: 42, comm: "joue dans l'illégalité", diplome: "arts et lettres de l'académie des arts ", email: "S.chardon@gmail.com", genre: "femme", jobs: "essentiellement du black", nom: "chardon", prenom: "sandrine", tel: "3141592653"},
+    {age: 47, comm: "wui", diplome: "ingénierie agronome", email: "add1@gmail.com", genre: "homme", jobs: "voir diplôme", nom: "pouquet", prenom: "jacques", tel: "0494461834"},
+    {age: 18, comm: "aime manga et jeux vidéo", diplome: "technologie de l'informatique",email: "arnaudmeunier03@gmail.com", genre: "homme", jobs: "caisier", nom: "meunier", prenom: "arnaud", tel: "0473583750"},
+    {age: 10, comm: "https://twitter.com/BSiberdt", diplome: "diplôme approximatif en médecine approximative",email: "benjaminsiberdtsimba@yahoo.be", genre: "autre", jobs: " influenceur et pâtissier les jeudis", nom: "siberdt", prenom: "benjamin", tel: "0469420420"},
     ];
 let filtre ={};
 let statusNav =0;
